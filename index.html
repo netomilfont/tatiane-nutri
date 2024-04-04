@@ -3,35 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="./src/assets/tatiane-icon.png">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/x-icon" href="src/img/tatiane-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <title>Nutricionista | Tatiane S. Florêncio </title>
 </head>
 <body>
-    <header class="header">
+    <header>
         <nav>
-            <div class="nav__logo">
+            <div class="nav-logo">
                 <a href="#">
-                    <img src="src/assets/tatiane-logo.jpeg" alt="Logo Nutricionista Tatiane Florêncio">
+                    <img src="src/img/tatiane-logo.png" alt="Logo Nutricionista Tatiane Florêncio">
                 </a>
             </div>
-            <ul class="nav__links nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Especialidades</a></li>
-                <li><a href="#">Atendimento Nutricional</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Contato</a></li>
+            <ul class="nav-links" id="nav-links">
+                <li class="nav-items" class="active"><a href="#home">Home</a></li>
+                <li class="nav-items"><a href="#about">Sobre</a></li>
+                <li class="nav-items"><a href="#specialties">Especialidades</a></li>
+                <li class="nav-items"><a href="#counseling">Acompanhamento</a></li>
+                <li class="nav-items"><a href="#testimonials">Depoimentos</a></li>
+                <li class="nav-items"><a href="#contact">Contato</a></li>
             </ul>
-            <div class="nav__menu__btn" id="menu-btn">
-                <span><i class="ri-menu-line"></i></span>
+            <div id="menu-btn">
+                <span><i class="fa-solid fa-bars"></i></span>
             </div>
         </nav>
+        <div id="menu-mobile">
+            <ul>
+                <li class="nav-items"><a href="#home">Home</a></li>
+                <li class="nav-items"><a href="#about">Sobre</a></li>
+                <li class="nav-items"><a href="#specialties">Especialidades</a></li>
+                <li class="nav-items"><a href="#counseling">Acompanhamento</a></li>
+                <li class="nav-items"><a href="#testimonials">Depoimentos</a></li>
+                <li class="nav-items"><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
     </header>
+    <main class="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    TATIANE 
+                    <br><span>FLORÊNCIO</span>
+                </h1>
+                <p class="description">Sua jornada para uma vida saudável começa aqui: <span>nutrição personalizada</span>.</p>
+                <div class="cta-button">
+                    <a href="#specialties">Especialidades</a>
+                </div>
+                <div class="social-media-buttons">
+                    <a target="_blank" href="https://wa.me/+5511910268529?text=Oi, bom dia. Tudo bem? Gostaria de agendar uma consulta.">
+                        <i class="fa-brands fa-whatsapp" alt="Icon do whatsapp da Tatiane Florêncio Nutricionista"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/nutritatiflorencio/">
+                        <i class="fa-brands fa-instagram" alt="Icon do instagram da Tatiane Florêncio Nutricionista"></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/nutritatiflorencio">
+                        <i class="fa-brands fa-facebook" alt="Icon do facebook da Tatianne Florêncio Nutricionista"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="src/img/tatiane-logo-animation.png" alt="Foto da nutricionista Tatiane S. Florêncio">
+            </div>
+        </section>
+
+        <section id="about">
+            <div>
+                <h1 class="section-title">Nutricionista Materno-infantil | CRN-3: 54408</h1>
+                <h2 class="section-subtitle"> 
+                    E quem é Tatiane Florêncio?
+                </h2>
+            </div>
+            <div class="about-content">
+                <div class="about-info-tatiane">
+                    <div class="about-img">
+                        <img src="src/img/tatiane-foto-01.png" alt="">
+                    </div>
+                    <div class="social-media-buttons about-buttons">
+                        <a target="_blank" href="https://wa.me/+5511910268529?text=Oi, bom dia. Tudo bem? Gostaria de agendar uma consulta.">
+                            <i class="fa-brands fa-whatsapp" alt="Icon do whatsapp da Tatiane Florêncio Nutricionista"></i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/nutritatiflorencio/">
+                            <i class="fa-brands fa-instagram" alt="Icon do instagram da Tatiane Florêncio Nutricionista"></i>
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/nutritatiflorencio">
+                            <i class="fa-brands fa-facebook" alt="Icon do facebook da Tatianne Florêncio Nutricionista"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-text-one">
+                    <p> 
+                        Olá, me chamo <strong>Tatiane Florêncio</strong>.<br><br>
+                        Sou nutricionista graduada pela Universidade Federal de São Paulo (UNIFESP) e possuo especialização em gastroenterologia pediátrica (UNIFESP), além de cursos de formação voltados para o comportamento alimentar.<br><br>
+                        Os meus atendimentos são direcionados para o público materno-infantil e mulheres que desejam melhorar os seus hábitos alimentares.<br><br>
+                        Durante todo o acompanhamento nutricional você encontrará um ambiente acolhedor, dinâmico, com um olhar individualizado e humanizado.<br><br>
+                        Minha missão é ajudar mulheres, crianças e adolescentes a terem uma alimentação equilibrada, que atenda às necessidades nutricionais de cada faixa etária e construir uma relação saudável com o alimento, trabalhando aspectos comportamentais relacionados a alimentação, pois acredito que corpo e mente andam de mãos dadas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="specialties">
+            <h2 class="section-title">E para quem é meu</h2>
+            <h3 class="section-subtitle">acompanhamento nutricional?</h3>
+            <div class="specialties-options">
+                <div class="specialties-option specialties-option-one">
+                    <div class="specialties-icon">
+                        <i class="fa-solid fa-spoon"></i>
+                    </div>
+                    <div class="specialties-img">
+                        <img src="src/img/pregnant.jpg"  class="" alt="Mulher grávida segurando a barriga">
+                    </div>
+                    <h3 class="specialties-title">Gestantes e Lactantes</h3>
+                    <button class="specialties-button"> Agende sua consulta</button>
+                </div>
+                <div class="specialties-option specialties-option-one">
+                    <div class="specialties-icon">
+                        <i class="fa-solid fa-spoon"></i>
+                    </div>
+                    <img src="src/img/baby.jpg"  class="" alt="Bebê sorrindo deitado na cama com lençois brancos">
+                    <h3 class="specialties-title">Bebês</h3>
+                    <button class="specialties-button"> Agende sua consulta</button>
+                </div>
+                <div class="specialties-option specialties-option-two">
+                    <div class="specialties-icon">
+                        <i class="fa-solid fa-spoon"></i>
+                    </div>
+                    <img src="src/img/kids.jpg"  class="" alt="Crianças se abraçando">
+                    <h3 class="specialties-title">Crianças e adolescentes</h3>
+                    <button class="specialties-button"> Agende sua consulta</button>
+                </div>
+                <div class="specialties-option specialties-option-two">
+                    <div class="specialties-icon">
+                        <i class="fa-solid fa-spoon"></i>
+                    </div>
+                    <img src="src/img/women.jpg"  class="" alt="Mulheres se abraçando">
+                    <h3 class="specialties-title">Mulheres</h3>
+                    <button class="specialties-button"> Agende sua consulta</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="counseling">
+            <div class="counseling-info">
+                <h2 class="section-title">Como funciona o meu</h2>
+                <h3 class="section-subtitle">acompanhamento nutricional?</h3>
+                <p>As consultas nutricionais têm como objetivo promover a reeducação alimentar respeitando a individualidade, aspectos nutricionais e comportamentais de cada paciente. <br><br>
+                    Tudo começa na primeira consulta onde entendo a história alimentar do paciente, suas preferências, rotina e dificuldades, para que possamos construir um planejamento alimentar de acordo com a sua realidade e objetivo.<br><br>
+                    A cada consulta será realizada uma nova avalição para traçarmos novas metas de acordo com a sua evolução. <br><br>
+                    Durante todo o acompanhamento você terá o meu suporte e direcionamento, para que juntos possamos traçar metas viáveis e alinhadas ao seu objetivo. Estaremos juntos nesse processo!
+                </p>
+            </div>
+            <div class="counseling-img">
+                <img src="src/img/salad-01.png" alt="Foto de um prato visto de cima dar cor preta cheio de salada.">
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/img/tatiane-foto-02.png" id="testimonials-tatiane" alt="Foto da Nutricionista Tatiane de jaleco sorrindo ">
+
+            <div id="testimonials-content">
+                <h2 class="section-title">Depoimentos</h2>
+                <h3 class="section-subtitle">de clientes satisfeitos</h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <div class="feedback-avatar">
+                            <img src="src/img/feedback-01.png" alt="Foto de Eliette Passos, primeiro feedback">
+                        </div>
+                        <div class="feedback-content">
+                            <p>
+                                Eliette Passos Martins
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "A "Nutri Tati" além de um excelente ser humano, é uma ótima pessoa! Ela está sendo fundamental no acompanhamento da Doença Celiáca do nosso filho, um assunto que infelizmente poucos dominam."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <div>
+                            <img src="src/img/feedback-02.png" class="feedback-avatar" alt="Foto de Bianca Andrade, feedback 2">
+                        </div>
+                        <div class="feedback-content">
+                            <p>
+                                Bianca Andrade Handan
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Tatiane é uma excelente profissional, super atenciosa e dedicada! Amei a consulta e me senti muito acolhida com a abordagem comportamental. Ela se preocupa bastante com o bem estar do paciente, dando excelentes orientações."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <div>
+                            <img src="src/img/feedback-03.png" class="feedback-avatar" alt="Foto de Ana Paula, feedback 3">
+                        </div>
+                        <div class="feedback-content">
+                            <p>
+                                Ana Paula
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "A nutricionista Tatiane é super atenciosa, se preocupa com o paciente, é super dedicada!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <div>
+                            <img src="src/img/feedback-04.png" class="feedback-avatar" alt="Foto de Ana Beatriz, feedback 4">
+                        </div>
+                        <div class="feedback-content">
+                            <p>
+                                Ana Beatriz
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Melhor atendimento de todos! Profissional atenciosa, respeitosa e dinâmica."
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <a target="_blank" href="https://www.google.com/search?client=safari&sca_esv=8bdb3d41053c44ad&sca_upv=1&hl=pt-br&cs=1&output=search&q=Nutricionista+Tatiane+Flor%C3%AAncio+-+Materno+Infantil&ludocid=9167927094377905416&lsig=AB86z5VnRWteIN8ecTwNDw7GcOh4&kgs=94d4bec909b2d4ad&shndl=-1&shem=lsp&source=sh/x/loc/hdr/m1/3#lrd=0x94ce439ae0240917:0x7f3b051e5b12fd08,1,,,,">
+                    <button class="feedback-button">
+                        Ver mais avaliações
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-map-box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.723183554967!2d-46.53747852388119!3d-23.650082564859176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce439ae0240917%3A0x7f3b051e5b12fd08!2sNutricionista%20Tatiane%20Flor%C3%AAncio%20-%20Materno%20Infantil!5e0!3m2!1spt-BR!2sbr!4v1712168875433!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Mapa do escritório da Tatiane Florêncio"></iframe>
+            </div>
+            <div class="contact-box">
+                <div>
+                    <h2 class="section-title">Onde estamos</h2>
+                    <h3 class="section-subtitle">localizados</h3>
+                    <p> Av. Dom Pedro II, 620 – Sala 124. <br>Bairro Jardim. Santo André – São Paulo. <br>CEP: 09080-000. </p>
+                </div>
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+    <footer>
+        <div id="footer-items">
+            <a href="#" class="nav-logo">
+                <img src="src/img/tatiane-logo.png" alt="Logo Tatiane Florêncio">
+            </a>
+            <div class="footer-contact">
+                <p>
+                    <span>Atendimento Presencial:</span> Av. Dom Pedro II, 620 – Sala 124. Bairro Jardim. Santo André – São Paulo. <br>
+                    <span>CEP:</span> 09080-000.<br>
+                    <span>On-line para o mundo todo:</span> Através da plataforma Google Meet <br>
+                    <span>Celular (whatsapp):</span> (11) 91026-8529 <br>
+                    <span>E-mail:</span> tatiane.silvaflorencio@gmail.com <br>
+                    <span>Horário de Atendimento (somente com hora marcada):</span> Segunda a Quarta das 08:00 até às 11:00. <br>
+                </p>
+            </div>
+            <div class="social-media-buttons">
+                <a target="_blank" href="https://wa.me/+5511910268529?text=Oi, bom dia. Tudo bem? Gostaria de agendar uma consulta.">
+                    <i class="fa-brands fa-whatsapp" alt="Icon do whatsapp da Tatiane Florêncio Nutricionista"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/nutritatiflorencio/">
+                    <i class="fa-brands fa-instagram" alt="Icon do instagram da Tatiane Florêncio Nutricionista"></i>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/nutritatiflorencio">
+                    <i class="fa-brands fa-facebook" alt="Icon do facebook da Tatianne Florêncio Nutricionista"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <div id="copyright">
+            <p>Desenvolvido com amor e café por Laura Sansil</p>
+            <p>&copy 2024 Tatiane S. Florêncio</p>
+        </div>
+    </footer>
+    <div id="whats-icon">
+        <a href="https://wa.me/+5511910268529?text=Oi, bom dia. Tudo bem? Gostaria de agendar uma consulta.">
+            <i class="fab fa-whatsapp" alt="Icon do whatsapp da Tatine Florêncio"></i>
+        </a>
+    </div>
+    <script defer src="src/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,131 @@
+#specialties {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title {
+    color: var(--color-4);
+    font-size: 1.5rem;
+}
+
+.section-subtitle {
+    color: var(--color-1);
+    font-size: 2.1875rem;
+}
+
+.specialties-options {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.specialties-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: var(--white-1);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.specialties-option:hover {
+    transform: translate(0, -2%);
+    transition: .3s;
+}
+
+.specialties-icon {
+    position: absolute;
+    background-color: var(--color-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: var(--white-1);
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.specialties-option img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.specialties-title {
+    color: var(--black-1);
+    font-weight: 500;
+    text-align: center;
+}
+
+.specialties-description {
+    font-size: 1rem;
+    color: var(--black-1);
+    text-align: center;
+}
+
+.specialties-button {
+    background-color: var(--color-2);
+    text-decoration: none;
+    color: var(--white-1);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 5px;
+    transition: .3s;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: none;
+}
+
+.specialties-button:hover {
+    background-color: var(--color-3);
+    color: var(--white-1);
+    transition: .3s;
+}
+
+@media screen and (max-width: 1170px) {
+    #specialties {
+        margin-bottom: 140px;
+    }
+    .specialties-options {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .specialties-option {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .specialties-option {
+        width: 100%
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 1.2rem
+    }
+
+    .section-subtitle {
+        text-align: center;
+        font-size: 1.6rem
+    }
+}
