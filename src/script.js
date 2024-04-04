@@ -6,6 +6,8 @@ $(document).ready(function(){
 
     $('.nav-items').on('click', function() {
         $('#menu-mobile').removeClass('active')
+        $('#menu-btn').find('i').removeClass('fa-xmark')
+        $('#menu-btn').find('i').addClass('fa-solid fa-bars')
     })
 
     const scrollPositionInicial = $(window).scrollTop()
