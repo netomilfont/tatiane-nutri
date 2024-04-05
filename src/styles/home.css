@@ -67,16 +67,6 @@
 #banner img {
     height: 65%;
     width: fit-content;
-    animation: MoveRotate 10s infinite alternate;
-}
-
-@keyframes MoveRotate {
-    0%, 100% {
-        transform: translateY(0) rotate(0deg);
-      }
-    50% {
-        transform: translateY(-150px) rotate(-45deg); 
-      }
 }
 
 .shape {
