@@ -1,126 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('header.css');
-@import url('about.css');
-@import url('home.css');
-@import url('specialties.css');
-@import url('testimonials.css');
-@import url('footer.css');
-@import url('contact.css');
-@import url('counseling.css');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("header.css");
+@import url("about.css");
+@import url("home.css");
+@import url("specialties.css");
+@import url("testimonials.css");
+@import url("footer.css");
+@import url("contact.css");
+@import url("counseling.css");
 
 :root {
-    --color-1: #767ab3 ;
-    --color-2: #f17274;
-    --color-3: #f2d38b;
-    --color-4: #874c62;
-    --white-1: #FAFAFA;
-    --black-1: #222222;
+  --color-1: #767ab3;
+  --color-2: #f17274;
+  --color-3: #f2d38b;
+  --color-4: #874c62;
+  --white-1: #fafafa;
+  --black-1: #222222;
 }
 
-
 * {
-    font-family: "Poppins", sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--white-1);
-    overflow-y: auto;
-    overflow-x: hidden;
-    touch-action: pan-y;
-    position: relative;
+  background-color: var(--white-1);
+  overflow-y: auto;
+  overflow-x: hidden;
+  touch-action: pan-y;
+  position: relative;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 section {
-    width: 90%;
-    max-width: 1200px;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .social-media-buttons {
-    display: flex;
-    gap: 18px;
+  display: flex;
+  gap: 18px;
 }
 
 .social-media-buttons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 40px;
-    font-size: 1.25rem;
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--color-4);
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    transition: .3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 40px;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--color-4);
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
 }
 
 .social-media-buttons a:hover {
-    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
-    transition: .3s ease;
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
 }
 
 ::-webkit-scrollbar {
-    background-color: none;
-    color: #222222;
-    width: 8px;
+  background-color: none;
+  color: #222222;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--color-4);
-    border-radius: 5px;
+  background-color: var(--color-4);
+  border-radius: 5px;
 }
 
 #whats-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 33px;
-    left: 93%;
-    z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 33px;
+  left: 93%;
+  z-index: 100;
 }
 
-#whats-icon a{
-    display: block;
-    min-width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 30px;
-    background-color: #01e675;
-    color: #ffffff;
-    border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: 2px 2px 2px #c0bdbd;
+#whats-icon a {
+  display: block;
+  min-width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  background-color: #01e675;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px #c0bdbd;
 }
 
 #whats-icon:hover a {
-    box-shadow: 2px 2px 5px #a09e9e;
+  box-shadow: 2px 2px 5px #a09e9e;
 }
 
-
 @media screen and (max-width: 800px) {
-    #whats-icon {
-        left: 90%;
-    }
+  #whats-icon {
+    left: 90%;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    #whats-icon {
-        left: 80%;
-    }
+  #whats-icon {
+    left: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #whats-icon {
+    left: 70%;
+  }
 }
